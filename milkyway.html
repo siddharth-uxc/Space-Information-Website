@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Way — Galaxy Learning</title>
+    <meta name="description" content="Learn about the Milky Way — our home galaxy, a barred spiral containing 100-400 billion stars.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌌 Galaxy Learning</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li><li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li><li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li><li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li><li><a href="neptune.html">Neptune</a></li>
+                <li><a href="moon.html">Moon</a></li><li><a href="blackhole.html">Black Hole</a></li>
+                <li><a href="milkyway.html" class="active">Milky Way</a></li><li><a href="comet.html">Comet</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="detail-page">
+        <div class="content-wrapper">
+            <a href="index.html" class="btn-back">← Back to Solar System</a>
+            <h1 class="page-title glow-text">🌌 Milky Way</h1>
+            <div class="detail-content">
+                <div class="image-section">
+                    <img src="images/milkway.jpg" alt="Milky Way" class="detail-image pulsing">
+                    <div class="image-glow milkyway-glow-effect"></div>
+                </div>
+                <div class="info-section">
+                    <h2>About The Milky Way</h2>
+                    <p class="intro-text">The Milky Way is a barred spiral galaxy that contains our Solar System. It's home to an estimated 100-400 billion stars and at least that many planets.</p>
+                    <h3>🌟 Key Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Type:</strong> Barred spiral galaxy</li>
+                        <li><strong>Diameter:</strong> 100,000–200,000 light-years</li>
+                        <li><strong>Stars:</strong> 100–400 billion</li>
+                        <li><strong>Age:</strong> 13.6 billion years</li>
+                        <li><strong>Center:</strong> Sagittarius A* supermassive black hole</li>
+                        <li><strong>Our Position:</strong> 26,000 light-years from center</li>
+                        <li><strong>Spiral Arms:</strong> 4 major arms</li>
+                    </ul>
+                    <h3>💡 Interesting Facts</h3>
+                    <ul class="facts-list">
+                        <li>Sun takes 225-250 million years to orbit the galaxy once</li>
+                        <li>Will collide with Andromeda galaxy in 4.5 billion years</li>
+                        <li>Part of the Local Group (50+ galaxies)</li>
+                        <li>Most mass is invisible dark matter</li>
+                        <li>Name comes from its milky appearance in night sky</li>
+                        <li>Visible as luminous band from dark locations</li>
+                        <li>Contains billions of planetary systems</li>
+                    </ul>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="showModal('milkyway')">More Facts</button>
+                        <a href="https://science.nasa.gov/milky-way/" target="_blank" class="btn-learn">Learn More (NASA)</a>
+                        <a href="https://en.wikipedia.org/wiki/Milky_Way" target="_blank" class="btn-learn">Wikipedia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="factModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+    <footer class="footer"><div class="footer-content"><div class="footer-section"><h3>🌌 Galaxy Learning</h3><p>Your Virtual Space Museum</p></div><div class="footer-section"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li><li><a href="earth.html">Earth</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📧 <a href="mailto:siddharthjhamail@gmail.com">siddharthjhamail@gmail.com</a></p></div></div><div class="footer-bottom"><p>&copy; 2025 Galaxy Learning. All Rights Reserved.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

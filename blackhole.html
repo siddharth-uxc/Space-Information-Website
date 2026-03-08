@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Holes — Galaxy Learning</title>
+    <meta name="description" content="Learn about Black Holes — regions of spacetime where gravity is so strong that nothing can escape.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌌 Galaxy Learning</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li><li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li><li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li><li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li><li><a href="neptune.html">Neptune</a></li>
+                <li><a href="moon.html">Moon</a></li><li><a href="blackhole.html" class="active">Black Hole</a></li>
+                <li><a href="milkyway.html">Milky Way</a></li><li><a href="comet.html">Comet</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="detail-page">
+        <div class="content-wrapper">
+            <a href="index.html" class="btn-back">← Back to Solar System</a>
+            <h1 class="page-title glow-text">🕳️ Black Holes</h1>
+            <div class="detail-content">
+                <div class="image-section">
+                    <img src="images/blackwhole.jpg" alt="Black Hole" class="detail-image pulsing">
+                    <div class="image-glow blackhole-glow-effect"></div>
+                </div>
+                <div class="info-section">
+                    <h2>About Black Holes</h2>
+                    <p class="intro-text">A black hole is a region of spacetime where gravity is so strong that nothing — not even light or other electromagnetic waves — has enough energy to escape. They are among the most fascinating and mysterious objects in the universe.</p>
+                    <h3>🌟 Key Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Types:</strong> Stellar, Intermediate, Supermassive, Primordial</li>
+                        <li><strong>Formation:</strong> Massive star collapse (supernova)</li>
+                        <li><strong>Event Horizon:</strong> Point of no return</li>
+                        <li><strong>Milky Way Center:</strong> Sagittarius A* (4 million solar masses)</li>
+                        <li><strong>First Image:</strong> M87* captured in 2019 by EHT</li>
+                        <li><strong>Smallest Known:</strong> ~3 solar masses</li>
+                        <li><strong>Largest Known:</strong> TON 618 (66 billion solar masses)</li>
+                    </ul>
+                    <h3>💡 Interesting Facts</h3>
+                    <ul class="facts-list">
+                        <li>Nothing can escape — not even light</li>
+                        <li>Time slows down near the event horizon</li>
+                        <li>Spaghettification stretches objects near black holes</li>
+                        <li>Stephen Hawking predicted they emit radiation</li>
+                        <li>Black hole mergers create gravitational waves</li>
+                        <li>LIGO first detected gravitational waves in 2015</li>
+                        <li>Supermassive ones power quasars — brightest objects in the universe</li>
+                    </ul>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="showModal('blackhole')">More Facts</button>
+                        <a href="https://science.nasa.gov/black-holes/" target="_blank" class="btn-learn">Learn More (NASA)</a>
+                        <a href="https://en.wikipedia.org/wiki/Black_hole" target="_blank" class="btn-learn">Wikipedia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="factModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+    <footer class="footer"><div class="footer-content"><div class="footer-section"><h3>🌌 Galaxy Learning</h3><p>Your Virtual Space Museum</p></div><div class="footer-section"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li><li><a href="earth.html">Earth</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📧 <a href="mailto:siddharthjhamail@gmail.com">siddharthjhamail@gmail.com</a></p></div></div><div class="footer-bottom"><p>&copy; 2025 Galaxy Learning. All Rights Reserved.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

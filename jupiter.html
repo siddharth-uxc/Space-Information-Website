@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter — Galaxy Learning</title>
+    <meta name="description" content="Learn about Jupiter — the gas giant king, bigger than all other planets combined.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌌 Galaxy Learning</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li><li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li><li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html" class="active">Jupiter</a></li><li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li><li><a href="neptune.html">Neptune</a></li>
+                <li><a href="moon.html">Moon</a></li><li><a href="blackhole.html">Black Hole</a></li>
+                <li><a href="milkyway.html">Milky Way</a></li><li><a href="comet.html">Comet</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="detail-page">
+        <div class="content-wrapper">
+            <a href="index.html" class="btn-back">← Back to Solar System</a>
+            <h1 class="page-title glow-text">🟠 Jupiter</h1>
+            <div class="detail-content">
+                <div class="image-section">
+                    <img src="images/jupiter.jpg" alt="Jupiter" class="detail-image pulsing">
+                    <div class="image-glow jupiter-glow-effect"></div>
+                </div>
+                <div class="info-section">
+                    <h2>About Jupiter</h2>
+                    <p class="intro-text">Jupiter is the fifth planet from the Sun and the largest in our Solar System. This gas giant is more massive than all other planets combined and is known for its Great Red Spot.</p>
+                    <h3>🌟 Key Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Type:</strong> Gas giant</li>
+                        <li><strong>Distance from Sun:</strong> 778.5 million km</li>
+                        <li><strong>Diameter:</strong> 139,820 km (11× Earth)</li>
+                        <li><strong>Orbital Period:</strong> 11.86 Earth years</li>
+                        <li><strong>Day Length:</strong> 9.93 hours (fastest rotation)</li>
+                        <li><strong>Moons:</strong> 95 confirmed</li>
+                        <li><strong>Composition:</strong> Mostly hydrogen and helium</li>
+                    </ul>
+                    <h3>💡 Interesting Facts</h3>
+                    <ul class="facts-list">
+                        <li>Great Red Spot is a storm larger than Earth</li>
+                        <li>More massive than all other planets combined</li>
+                        <li>Europa may have liquid water ocean under its ice</li>
+                        <li>Io is the most volcanically active body in Solar System</li>
+                        <li>Ganymede is larger than Mercury</li>
+                        <li>Has a faint ring system</li>
+                        <li>Protects inner planets from asteroids and comets</li>
+                    </ul>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="showModal('jupiter')">More Facts</button>
+                        <a href="https://science.nasa.gov/jupiter/" target="_blank" class="btn-learn">Learn More (NASA)</a>
+                        <a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank" class="btn-learn">Wikipedia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="factModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+    <footer class="footer"><div class="footer-content"><div class="footer-section"><h3>🌌 Galaxy Learning</h3><p>Your Virtual Space Museum</p></div><div class="footer-section"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li><li><a href="earth.html">Earth</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📧 <a href="mailto:siddharthjhamail@gmail.com">siddharthjhamail@gmail.com</a></p></div></div><div class="footer-bottom"><p>&copy; 2025 Galaxy Learning. All Rights Reserved.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus — Galaxy Learning</title>
+    <meta name="description" content="Learn about Uranus — the ice giant that rotates on its side.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌌 Galaxy Learning</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li><li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li><li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li><li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html" class="active">Uranus</a></li><li><a href="neptune.html">Neptune</a></li>
+                <li><a href="moon.html">Moon</a></li><li><a href="blackhole.html">Black Hole</a></li>
+                <li><a href="milkyway.html">Milky Way</a></li><li><a href="comet.html">Comet</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="detail-page">
+        <div class="content-wrapper">
+            <a href="index.html" class="btn-back">← Back to Solar System</a>
+            <h1 class="page-title glow-text">🔵 Uranus</h1>
+            <div class="detail-content">
+                <div class="image-section">
+                    <img src="images/uranus.jpg" alt="Uranus" class="detail-image pulsing">
+                    <div class="image-glow uranus-glow-effect"></div>
+                </div>
+                <div class="info-section">
+                    <h2>About Uranus</h2>
+                    <p class="intro-text">Uranus is the seventh planet from the Sun and the third-largest in our Solar System. It's an ice giant with a unique sideways rotation, making it one of the most unusual planets.</p>
+                    <h3>🌟 Key Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Type:</strong> Ice giant</li>
+                        <li><strong>Distance from Sun:</strong> 2.87 billion km</li>
+                        <li><strong>Diameter:</strong> 50,724 km (4× Earth)</li>
+                        <li><strong>Orbital Period:</strong> 84 Earth years</li>
+                        <li><strong>Day Length:</strong> 17.24 hours</li>
+                        <li><strong>Axial Tilt:</strong> 98° (rotates on its side!)</li>
+                        <li><strong>Moons:</strong> 27 known</li>
+                    </ul>
+                    <h3>💡 Interesting Facts</h3>
+                    <ul class="facts-list">
+                        <li>Only planet that rotates on its side</li>
+                        <li>Each pole gets 42 years of sunlight then 42 years of darkness</li>
+                        <li>Discovered by William Herschel in 1781</li>
+                        <li>Has 13 faint rings discovered in 1977</li>
+                        <li>Moons named after Shakespeare characters</li>
+                        <li>Coldest planetary atmosphere (-224°C)</li>
+                        <li>Blue-green color from methane absorbing red light</li>
+                    </ul>
+                    <div class="button-group">
+                        <button class="btn-primary" onclick="showModal('uranus')">More Facts</button>
+                        <a href="https://science.nasa.gov/uranus/" target="_blank" class="btn-learn">Learn More (NASA)</a>
+                        <a href="https://en.wikipedia.org/wiki/Uranus" target="_blank" class="btn-learn">Wikipedia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="factModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+    <footer class="footer"><div class="footer-content"><div class="footer-section"><h3>🌌 Galaxy Learning</h3><p>Your Virtual Space Museum</p></div><div class="footer-section"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="sun.html">Sun</a></li><li><a href="earth.html">Earth</a></li></ul></div><div class="footer-section"><h4>Contact</h4><p>📧 <a href="mailto:siddharthjhamail@gmail.com">siddharthjhamail@gmail.com</a></p></div></div><div class="footer-bottom"><p>&copy; 2025 Galaxy Learning. All Rights Reserved.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

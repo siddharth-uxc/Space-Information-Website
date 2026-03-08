@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Learning — Virtual Space Museum</title>
+    <meta name="description" content="Explore the wonders of our Solar System and beyond in this interactive Virtual Space Museum. Learn about planets, black holes, comets, and more.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="rocket-wrapper">
+            <div class="rocket">🚀</div>
+            <div class="rocket-exhaust">
+                <span class="flame flame-1"></span>
+                <span class="flame flame-2"></span>
+                <span class="flame flame-3"></span>
+            </div>
+        </div>
+        <div class="loading-stars">
+            <span class="star-particle"></span>
+            <span class="star-particle"></span>
+            <span class="star-particle"></span>
+            <span class="star-particle"></span>
+            <span class="star-particle"></span>
+            <span class="star-particle"></span>
+        </div>
+        <div class="loading-text">Launching into space...</div>
+    </div>
+
+    <!-- Starfield Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌌 Galaxy Learning</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+                <li><a href="moon.html">Moon</a></li>
+                <li><a href="blackhole.html">Black Hole</a></li>
+                <li><a href="milkyway.html">Milky Way</a></li>
+                <li><a href="comet.html">Comet</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero: Solar System -->
+    <div class="galaxy-container">
+        <div class="welcome-text">
+            <h1>Welcome to the Virtual Space Museum</h1>
+            <p>Explore our Solar System and beyond!</p>
+            <span class="scroll-hint">Scroll to explore</span>
+        </div>
+
+        <div class="solar-system-circular">
+            <!-- Sun -->
+            <div class="sun-center-new" onclick="navigateTo('sun.html')" title="Explore the Sun">
+                <div class="sun-glow-new"></div>
+                <img src="images/sun.jpg" alt="Sun">
+                <div class="label">Sun</div>
+            </div>
+
+            <!-- Orbit Rings -->
+            <div class="orbit-ring orbit-ring-inner"></div>
+            <div class="orbit-ring orbit-ring-outer"></div>
+
+            <!-- Inner Planets -->
+            <div class="planet-circle planet-circle-inner">
+                <div class="planet-item planet-small planet-pos-1" onclick="navigateTo('mercury.html')" title="Mercury">
+                    <img src="images/mercury.jpg" alt="Mercury">
+                    <div class="label">Mercury</div>
+                </div>
+                <div class="planet-item planet-small planet-pos-2" onclick="navigateTo('venus.html')" title="Venus">
+                    <img src="images/venus.jpg" alt="Venus">
+                    <div class="label">Venus</div>
+                </div>
+                <div class="planet-item planet-small planet-pos-3" onclick="navigateTo('earth.html')" title="Earth">
+                    <img src="images/earth.jpg" alt="Earth">
+                    <div class="label">Earth</div>
+                </div>
+                <div class="planet-item planet-small planet-pos-4" onclick="navigateTo('mars.html')" title="Mars">
+                    <img src="images/mars.jpg" alt="Mars">
+                    <div class="label">Mars</div>
+                </div>
+            </div>
+
+            <!-- Outer Planets -->
+            <div class="planet-circle planet-circle-outer">
+                <div class="planet-item planet-large planet-pos-1" onclick="navigateTo('jupiter.html')" title="Jupiter">
+                    <img src="images/jupiter.jpg" alt="Jupiter">
+                    <div class="label">Jupiter</div>
+                </div>
+                <div class="planet-item planet-large planet-pos-2" onclick="navigateTo('saturn.html')" title="Saturn">
+                    <img src="images/saturn.jpg" alt="Saturn">
+                    <div class="label">Saturn</div>
+                </div>
+                <div class="planet-item planet-medium planet-pos-3" onclick="navigateTo('uranus.html')" title="Uranus">
+                    <img src="images/uranus.jpg" alt="Uranus">
+                    <div class="label">Uranus</div>
+                </div>
+                <div class="planet-item planet-medium planet-pos-4" onclick="navigateTo('neptune.html')" title="Neptune">
+                    <img src="images/neptune.jpg" alt="Neptune">
+                    <div class="label">Neptune</div>
+                </div>
+            </div>
+
+            <!-- Special Objects -->
+            <div class="special-object special-topleft" onclick="navigateTo('moon.html')" title="Moon">
+                <img src="images/moon.jpg" alt="Moon">
+                <div class="label">Moon</div>
+            </div>
+            <div class="special-object special-topright" onclick="navigateTo('blackhole.html')" title="Black Hole">
+                <img src="images/blackwhole.jpg" alt="Black Hole">
+                <div class="label">Black Hole</div>
+            </div>
+            <div class="special-object special-bottomleft" onclick="navigateTo('milkyway.html')" title="Milky Way">
+                <img src="images/milkway.jpg" alt="Milky Way">
+                <div class="label">Milky Way</div>
+            </div>
+            <div class="special-object special-bottomright" onclick="navigateTo('comet.html')" title="Comet">
+                <img src="images/comet.jpg" alt="Comet">
+                <div class="comet-tail-new"></div>
+                <div class="label">Comet</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Section -->
+    <section class="section" id="explore">
+        <h2 class="section-title reveal">Explore the Cosmos</h2>
+        <p class="section-subtitle reveal">Click on any celestial body to learn fascinating facts</p>
+        <div class="explore-grid">
+            <a href="sun.html" class="explore-card reveal">
+                <img src="images/sun.jpg" alt="Sun">
+                <h3>The Sun</h3>
+                <p>Our star — a blazing sphere of hydrogen and helium powering all life on Earth.</p>
+            </a>
+            <a href="mercury.html" class="explore-card reveal">
+                <img src="images/mercury.jpg" alt="Mercury">
+                <h3>Mercury</h3>
+                <p>The smallest planet and closest to the Sun with extreme temperature swings.</p>
+            </a>
+            <a href="venus.html" class="explore-card reveal">
+                <img src="images/venus.jpg" alt="Venus">
+                <h3>Venus</h3>
+                <p>Earth's "evil twin" — a scorching world shrouded in thick sulfuric acid clouds.</p>
+            </a>
+            <a href="earth.html" class="explore-card reveal">
+                <img src="images/earth.jpg" alt="Earth">
+                <h3>Earth</h3>
+                <p>Our pale blue dot — the only known world to harbor life in the universe.</p>
+            </a>
+            <a href="mars.html" class="explore-card reveal">
+                <img src="images/mars.jpg" alt="Mars">
+                <h3>Mars</h3>
+                <p>The Red Planet — home to the largest volcano and canyon in the Solar System.</p>
+            </a>
+            <a href="jupiter.html" class="explore-card reveal">
+                <img src="images/jupiter.jpg" alt="Jupiter">
+                <h3>Jupiter</h3>
+                <p>The gas giant king — bigger than all other planets combined.</p>
+            </a>
+            <a href="saturn.html" class="explore-card reveal">
+                <img src="images/saturn.jpg" alt="Saturn">
+                <h3>Saturn</h3>
+                <p>The jewel of the Solar System with its spectacular ring system.</p>
+            </a>
+            <a href="neptune.html" class="explore-card reveal">
+                <img src="images/neptune.jpg" alt="Neptune">
+                <h3>Neptune</h3>
+                <p>The ice giant with the fastest winds in the Solar System.</p>
+            </a>
+            <a href="blackhole.html" class="explore-card reveal">
+                <img src="images/blackwhole.jpg" alt="Black Hole">
+                <h3>Black Holes</h3>
+                <p>Where gravity is so strong that nothing — not even light — can escape.</p>
+            </a>
+            <a href="milkyway.html" class="explore-card reveal">
+                <img src="images/milkway.jpg" alt="Milky Way">
+                <h3>Milky Way</h3>
+                <p>Our home galaxy — a barred spiral containing 100-400 billion stars.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section" id="quiz">
+        <h2 class="section-title reveal">Space Quiz Challenge</h2>
+        <p class="section-subtitle reveal">Test your cosmic knowledge with these brain-teasing questions</p>
+        <div class="quiz-container reveal" id="quizContainer">
+            <div class="quiz-progress" id="quizProgress"></div>
+            <div id="quizContent"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title reveal">About Galaxy Learning</h2>
+        <p class="section-subtitle reveal">Your gateway to understanding the universe</p>
+        <div class="about-grid">
+            <div class="about-card reveal">
+                <span class="icon">🔭</span>
+                <h3>Interactive Learning</h3>
+                <p>Explore each celestial body with rich visuals, key facts, and links to trusted sources like NASA.</p>
+            </div>
+            <div class="about-card reveal">
+                <span class="icon">🚀</span>
+                <h3>Immersive Experience</h3>
+                <p>Our animated solar system brings space to life — hover, click, and discover the cosmos interactively.</p>
+            </div>
+            <div class="about-card reveal">
+                <span class="icon">🧠</span>
+                <h3>Test Your Knowledge</h3>
+                <p>Challenge yourself with our space quiz and learn fun facts you never knew about the universe.</p>
+            </div>
+            <div class="about-card reveal">
+                <span class="icon">🌍</span>
+                <h3>Free & Open</h3>
+                <p>Galaxy Learning is completely free. Built with passion for space enthusiasts of all ages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="section-subtitle reveal">Have a question or want to say hello? Send me a message!</p>
+        <div class="contact-container reveal">
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="e.g. Neil Armstrong" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="e.g. neil@nasa.gov" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" name="subject" placeholder="What's on your mind?">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
+                    <span class="btn-text">🚀 Send Message</span>
+                    <span class="btn-loading" style="display:none;">Sending...</span>
+                </button>
+            </form>
+            <div class="form-success" id="contactSuccess" style="display:none;">
+                <span class="success-icon">✅</span>
+                <h3>Message Sent!</h3>
+                <p>Thanks for reaching out. I'll get back to you soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🌌 Galaxy Learning</h3>
+                <p>Your Virtual Space Museum — exploring the cosmos one planet at a time.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#quiz">Space Quiz</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 <a href="mailto:siddharthjhamail@gmail.com">siddharthjhamail@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Galaxy Learning. All Rights Reserved.</p>
+            <p>Made with ❤️ for Space Enthusiasts</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
