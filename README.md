@@ -1,2 +1,9 @@
-# Space-Information-Website
-A responsive space-themed website providing information about planets in the solar system using HTML, CSS, and JavaScript.
+# 🌌 Space Information Website
+
+A responsive website that provides information about planets in the solar system.
+
+## Technologies Used
+HTML, CSS, JavaScript
+
+## Live Website
+https://siddharth-uxc.github.io/Space-Information-Website
