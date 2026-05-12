@@ -52,7 +52,7 @@ Functional requirements describe **what the system must do**:
 | **Performance** | Quiz submission must respond within **< 2 seconds** under normal load. |
 | **Scalability** | Must support **500 concurrent students** taking tests simultaneously. |
 | **Security & Privacy** | Secure login with encrypted passwords; role-based access (teacher/student); grades visible only to the owner. |
-| **Availability / Reliability** | System uptime target of **≥ 99.5 %**; no data loss on assignment submission. |
+| **Availability / Reliability** | System uptime target of **≥ 99.5%**; no data loss on assignment submission. |
 | **Usability** | Simple, intuitive UI accessible on both desktop and mobile browsers. |
 | **Compatibility** | Works on latest versions of Chrome, Firefox, Safari, and Edge. |
 | **Maintainability** | New course types or question formats can be added without breaking existing functionality. |
